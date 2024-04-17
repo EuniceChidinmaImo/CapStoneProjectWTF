@@ -1,0 +1,519 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E2E6E9;
+  }
+  
+  .headercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  .headerlogo img {
+    width: 300px; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+   nav li {
+    margin-right: 70px;
+  }
+  
+  #navhome{
+    color: #0079BF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #090909;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+  }
+
+  .hamburger{
+    display: none;
+ }
+ 
+  
+  .signin a {
+    text-decoration: none;
+    color: #E2E6E9;
+    background-color: #0079BF;
+    width:  113px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 8px;
+  }
+
+  /* Hero Section */
+
+.herocontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textsection {
+  width: 50%;
+}
+
+.textsection h1 {
+  color: #000000;
+  font-family: Open Sans;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 87.16px;
+  margin-left: 50px;
+  width: 620px;
+  height: 261px;
+}
+
+.textsection h5 {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.68px;
+  margin-left: 50px;
+  color: #000000;
+
+}
+
+.bookbutton {
+  padding: 20px;
+  background-color: #0079BF;
+  color: white;
+  text-decoration: none;
+  margin-left: 50px;
+  width: 202px;
+  height: 51px;
+  border-radius: 8px;
+}
+
+.imagesection img {
+  width: 95%;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 0;
+  width: 1200px;
+  margin: 50px;
+}
+
+.containersection{
+  background-color: #0079BF;
+  width: 1200px;
+  height: 550px;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.services h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.45px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  text-align: center;
+  background-color: #E2E6E9;
+  width: 381px;
+  height: 263px;
+  border-radius: 16px;
+}
+
+.service img {
+  width: 200px; 
+}
+
+.service p {
+  font-size: 1rem;
+  color: #000000;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+  margin-top: 10px;
+}
+
+/* Vet Section */
+.Veterinary {
+  padding: 40px 0;
+  width: 1200px;
+  margin: 50px;
+}
+
+.Veterinarysection{
+  background-color: #0079BF;
+  width: 1200px;
+  height: 1000px;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.Veterinary h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.45px;
+}
+
+.Veterinaryservices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Veterinaryservice {
+  text-align: center;
+  background-color: #E2E6E9;
+  width: 335px;
+  height: 350px;
+  border-radius: 100px; 
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.Veterinaryservice img {
+  width: 315px;
+}
+
+.Veterinaryservice p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#vetp{
+  color: #E2E6E9;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  text-align: center;
+}
+
+ #vetservice{
+  margin-top: 150px;
+} 
+
+/* CARDCONTENT */
+
+.consultcard {
+  padding: 40px;
+  width: 1200px;
+  height: 250px;
+  margin: 50px;
+  border-radius: 16px;
+  background-color: #FF8C00;
+}
+
+.cardcontent {
+  text-align: center;
+}
+
+.cardcontent h2 {
+  
+  color: #090909;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.09px;
+  text-align: center;
+
+}
+
+.bookconsult {
+  background-color: #0079BF;
+  color: #E2E6E9;
+  border: none;
+  cursor: pointer;
+  width: 360px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 43.57px;
+}
+
+/* Footer Section */
+footer {
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  width: 1125px;
+  height: 112px;
+  margin: auto;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.footerlogosection {
+  flex: 1;
+  text-align: left;
+}
+
+
+.footerlogo {
+width: 243.18px;
+height: 64px;
+}
+
+.footertext {
+  position: relative;
+  bottom: 30px;
+  color: #000000;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footersection {
+  flex: 1;
+  padding: 0 10px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+ .footersection a {
+  color: #000000;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+}
+
+
+.footercopyright {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24.2px;
+  margin-top: -40px;
+}
+
+/* Media Query */
+/* Media Query */
+
+@media only screen and (min-width: 390px) and (max-width:844px){
+ 
+body{
+overflow-x: hidden;
+}
+
+  .hamburger {
+    display: inline-block;
+ }
+
+ .hamburger i{
+  font-size: 2rem;
+  color:black;
+  border: 1px solid #51DD11;
+  padding: .5rem;
+  border-radius: 5px;
+  transition: .5s;
+} 
+
+.textsection h1 {
+  font-size: 30px;
+  margin-left: 50px;
+  width: 300px;
+  height: 100px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+nav{
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color:#ffffff;
+  background-color: white;
+  padding: 0.2rem ;
+  transform: translateX(100%);
+  z-index: 11;
+  transition: all .5s;
+  margin-top: 4.5rem;
+  text-align: center;
+  }
+
+  .bookbutton {
+    background-color: #0079BF;
+    margin-left: 30px;
+    padding: 16px;
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    background-color: #E2E6E9;
+    width: 300px;
+    height: 290px;
+  }
+
+  .containersection{
+    width: 300px;
+    height: 1850px;
+    border-radius: 8px;
+    padding: 40px;
+    margin-left:-45px;
+    
+  }
+
+  .services h1 {
+    text-align: left;
+    font-size: 40px;
+  }
+
+  .Veterinary h1 {
+    text-align: left;
+    font-size: 35px;
+  }
+
+  .Veterinaryservices-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Veterinarysection{
+    background-color: #0079BF;
+    width: 300px;
+    height: 2550px;
+    padding: 40px;
+    margin-left:-45px;
+  }
+
+
+  .Veterinaryservice {
+    width: 305px;
+    height: 350px;
+    border-radius: 100px; 
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+  #vet1{
+    margin-bottom: 90px;
+  }
+
+  .consultcard {
+    padding: 40px;
+    width: 300px;
+    height: 500px;
+    margin: 5px;
+    background-color: #FF8C00;
+  }
+
+  .bookconsult {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .footercontent {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+
+  .footercopyright {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 30px ;
+  }
+  
+
+/* SLIDE MENU WHEN THE HAMBURGER IS CLICKED */
+/* #toggle:checked ~ nav {
+  transform: translate(0);
+  }
+  
+  #toggle:checked ~ .hamburger i {
+  border: 1px solid black;
+  padding: .5rem;
+  border-radius: 5px;
+  transition: .5s;
+  } */
+
+  /* a {
+  text-align: center;
+  margin-left: 1rem;
+  font-size: .6rem;
+  } */
+  
+  /* .nav a{
+    margin: 0.5rem;
+    border-bottom:1px solid #51DD11;
+    padding-bottom:0.5rem ;
+    color: var(--white);
+    transition: all .3s;
+    
+    }
+    
+    .signin{
+    margin: 0.5rem;
+    } */
+    
+    /* .navigation a::before{
+    display: none;
+    }
+    .navigation::after{
+    display: none;
+    }
+
+   */
+  
+  }
+
+
+
+
+
