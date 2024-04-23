@@ -8,28 +8,35 @@
     <title>PetApp</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="headercontainer">
         <div class="headerlogo">
-          <img src="images/Logo.png" alt="Logo" />
+          <a href="/index.html">
+            <img src="images/Logo.png" alt="Logo" />
+          </a>
         </div>
 
-          <label for="toggle" class="hamburger">
+          <label for="toggle" class="hamburger" id="hamburger">
             <i class="fa-solid fa-bars"></i>
           </label>
+          <label for="toggle" class="close-hamburger" id="close-hamburger">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
 
-        <nav>
+        <nav id="nav-menu">
           <ul>
-            <li><a id="navhome" href="#">Home</a></li>
+            <li><a id="navhome" href="/index.html">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Pet Health</a></li>
             <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="anchor-btn">
+              <button class="signin">
+              Sign In
+            </button>
+          </a></li>
           </ul>
         </nav>
-        <div class="signin">
-          <a href="#">Sign In</a>
-        </div>
       </div>
     </header>
 
@@ -146,28 +153,41 @@
         </div>
 
         <div class="footersection">
-          <a href="#">Terms of service</a>  
+          <a href="/terms.html">Terms of service</a>  
         </div>
 
         <div class="footersection">
-          <a href="#">Privacy Policy</a>    
+          <a href="/privacypolicy.html">Privacy Policy</a>    
         </div>
 
         <div class="footersection">
           <a href="#">Contact Us</a>   
+          <div class="contactus">
+            <p> Email:support@petwellness.com </p>
+            <p>Phone:+234-675-7865</p>
+        </div>
         </div>
     </div>
     <p class="footercopyright">© 2024 Your Company. All rights reserved.</p>
 </footer>
 
 
-<!-- <script>
-const toggle = document.getElementById("toggle");
+<script>
 const hamburger = document.getElementById("hamburger");
-
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+const closeHamburger = document.getElementById("close-hamburger")
+const nav = document.getElementById("nav-menu");
+const header = document.getElementById("header")
+hamburger.addEventListener("click", () => {
+   nav.style.display = "block";
+   hamburger.style.display = "none";
+   closeHamburger.style.display = "block"
 });
 
-</script>  -->
+closeHamburger.addEventListener('click', () => {
+  hamburger.style.display = 'block';
+  closeHamburger.style.display = 'none'
+  nav.style.display = "none"
+})
+
+</script> 
 </html>

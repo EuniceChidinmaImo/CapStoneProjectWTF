@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+
+  }
+
+  .privacy{
+    padding: 30px;
+    
+  }
+
+  #pptext{
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.57px;
+  }
+
+  .privacy h3, h4{
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 29.05px;
+    text-align: left;
+  }
+
+  .privacy span{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+
+  }
+
+  .privacyhome{
+    color: #000 !important; 
+  }
+
+
+
