@@ -4,6 +4,11 @@ body {
     background-color: #E2E6E9;
     overflow-x: hidden;
   }
+  .container{
+    padding: 35px;
+    margin: 0;
+    max-width: 100%;
+  }
   
   .headercontainer{
     display: flex;
@@ -97,11 +102,12 @@ body {
 .bookbutton {
   padding: 20px;
   background-color: #0079BF;
+  border: none;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   margin-left: 50px;
   width: 202px;
-  height: 51px;
   border-radius: 8px;
 }
 
@@ -111,17 +117,13 @@ body {
 
 /* Services Section */
 .services {
-  padding: 40px 0;
-  width: 1200px;
-  margin: 50px;
+
 }
 
 .containersection{
+  padding: 100px 50px 100px 50px;
   background-color: #0079BF;
-  width: 1200px;
-  height: 550px;
   border-radius: 8px;
-  padding: 40px;
 }
 
 .services h1 {
@@ -136,14 +138,14 @@ body {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 40px;
 }
 
 .service {
   text-align: center;
   background-color: #E2E6E9;
-  width: 381px;
-  height: 263px;
+  /* width: 381px;
+  height: 263px; */
   border-radius: 16px;
 }
 
@@ -163,15 +165,11 @@ body {
 
 /* Vet Section */
 .Veterinary {
-  padding: 40px 0;
-  width: 1200px;
-  margin: 50px;
+
 }
 
 .Veterinarysection{
   background-color: #0079BF;
-  width: 1200px;
-  height: 1000px;
   border-radius: 8px;
   padding: 40px;
 }
@@ -193,15 +191,20 @@ body {
 
 .Veterinaryservice {
   text-align: center;
+}
+
+.vetimgwrapper{
+  padding: 30px;
   background-color: #E2E6E9;
-  width: 335px;
-  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px; 
-  margin-top: 20px;
-  margin-left: 30px;
 }
 
 .Veterinaryservice img {
+  /* width: 315px; */
+  max-width: 100%;
   width: 315px;
 }
 
@@ -209,9 +212,8 @@ body {
   font-family: Inter;
   font-size: 24px;
   font-weight: 600;
-  line-height: 29.05px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 #vetp{
@@ -219,23 +221,17 @@ body {
   font-family: Inter;
   font-size: 24px;
   font-weight: 600;
-  line-height: 29.05px;
   text-align: center;
 }
-
- #vetservice{
-  margin-top: 150px;
-} 
 
 /* CARDCONTENT */
 
 .consultcard {
   padding: 40px;
-  width: 1200px;
   height: 250px;
-  margin: 50px;
   border-radius: 16px;
   background-color: #FF8C00;
+  margin-top: 50px;
 }
 
 .cardcontent {
@@ -259,11 +255,10 @@ body {
   border: none;
   cursor: pointer;
   width: 360px;
-  height: 60px;
   padding: 10px;
   border-radius: 10px;
   font-family: Inter;
-  font-size: 33px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 43.57px;
 }
@@ -330,6 +325,10 @@ height: 64px;
   margin-top: -40px;
 }
 
+footer{
+  width: auto;
+}
+
 .contactus{
   padding: 3px;
 }
@@ -348,12 +347,20 @@ height: 64px;
   .headerlogo img {
     width: 200px;
   }
+
+  
+  
 }
 @media screen and (max-width: 1000px){
   nav li {
     margin-right: 20px;
+  }  
+
+ 
+
   }
-}
+
+
 @media screen and (max-width: 930px){
   header{
     position: fixed;
@@ -361,8 +368,36 @@ height: 64px;
     background: white;
     width: 100%;
   }
+.herocontent{
+  flex-direction: column;
+}
+.textsection{
+  width: 100%;
+}
+.textsection h1{
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.textsection h5{
+  margin: 0;
+}
+.bookbutton{
+  margin: 20px 0 0 0
+}
+
+.imagesection{
+  margin-top: 100px;
+}
+
+.imagesection img{
+  width: 100%;
+}
   .headercontainer{
     padding: 0;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   .hamburger{
     cursor: pointer;
@@ -407,10 +442,45 @@ height: 64px;
   .herosection{
     margin-top: 100px;
   }
+
+  .consultcard {
+    height: auto;
+  }
+
+  .bookconsult {
+    width: 100%;
+  }
+  footer{
+    width: auto;
+  }
+  .footercontent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerlogosection{
+    text-align: center;
+  }
+
+  .footercopyright{
+    text-align: center;
+  }
+
+  .footercopyright {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 30px ;
+  }
 }
 
+@media screen and (max-width: 640px){
+  .services-grid {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+}
 
-@media only screen and (min-width: 390px) and (max-width:844px){
+ @media only screen and (min-width: 390px) and (max-width:844px){
  
 body{
 overflow-x: hidden;
@@ -429,42 +499,6 @@ overflow-x: hidden;
   transition: .5s;
 } 
 
-.textsection h1 {
-  font-size: 30px;
-  margin-left: 50px;
-  width: 300px;
-  height: 100px;
-  font-weight: 200;
-  line-height: 30px;
-}
-
-
-  .bookbutton {
-    background-color: #0079BF;
-    margin-left: 30px;
-    padding: 16px;
-  }
-
-  .services-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .service {
-    background-color: #E2E6E9;
-    width: 300px;
-    height: 290px;
-  }
-
-  .containersection{
-    width: 300px;
-    height: 1850px;
-    border-radius: 8px;
-    padding: 40px;
-    margin-left:-45px;
-    
-  }
-
   .services h1 {
     text-align: left;
     font-size: 40px;
@@ -474,58 +508,4 @@ overflow-x: hidden;
     text-align: left;
     font-size: 35px;
   }
-
-  .Veterinaryservices-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Veterinarysection{
-    background-color: #0079BF;
-    width: 300px;
-    height: 2550px;
-    padding: 40px;
-    margin-left:-45px;
-  }
-
-
-  .Veterinaryservice {
-    width: 305px;
-    height: 350px;
-    border-radius: 100px; 
-    margin-top: 20px;
-    margin-left: 2px;
-  }
-
-  #vet1{
-    margin-bottom: 90px;
-  }
-
-  .consultcard {
-    padding: 40px;
-    width: 300px;
-    height: 500px;
-    margin: 5px;
-    background-color: #FF8C00;
-  }
-
-  .bookconsult {
-    width: 300px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  
-  .footercontent {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-  }
-
-  .footercopyright {
-    margin-top: 40px;
-    text-align: left;
-    font-size: 14px;
-    margin-left: 30px ;
-  }
-  }
+  } 
