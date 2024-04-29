@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: inter;
+    overflow-x: hidden;
+  }
+
+
+.privacyhome{
+    color: #000 !important; 
+  }
+
+  .wellnesscontainer{
+    padding: 30px;
+  }
+
+  .wellnesscontainer h1{
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-around;
+    color: #0079BF;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+.featuredtip{
+    background-color: #B8E5FF;
+    padding: 10px 20px 10px 20px;
+    box-shadow: #00000040;
+    width: 95%;
+    margin-left: 10px;
+    
+}
+
+.featuredcontainer h3{
+    color: #009EFA;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.featuredcontainer h4{
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.imagecontainer img{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 400px;
+    padding: 40px;
+}
+
+.petarticle a{
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.featuredcontainer p{
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    word-spacing: 10px;
+}

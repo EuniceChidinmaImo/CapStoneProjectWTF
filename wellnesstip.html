@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e252d778c.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wellness.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="headercontainer">
+          <div class="headerlogo">
+            <a href="/index.html">
+              <img src="images/Logo.png" alt="Logo" />
+            </a>
+          </div>
+  
+            <label for="toggle" class="hamburger" id="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <label for="toggle" class="close-hamburger" id="close-hamburger">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+  
+          <nav id="nav-menu">
+            <ul>
+              <li><a id="navhome" class="privacyhome" href="/index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="/wellnesstip.html">Pet Health</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#" class="anchor-btn">
+                <button class="signin">
+                Sign In
+              </button>
+            </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <div class="wellnesscontainer">
+        <h1>Wellness Tips</h1>
+        <ul class="menu">
+            <li>Nutrition</li>
+            <li>Exercise</li>
+            <li>Grooming</li>
+            <li>Preventive Care</li>
+        </ul>
+
+        <div class="featuredcontainer">
+        <div class="featuredtip">
+            <h3>Featured Tip Of The Day</h3>
+
+            <h4>Best Foods For Healthy Skin:</h4>
+            <p>Discover the top food that promote healthy skin and coat of your pet</p>
+            <p>Author: Pet wellness magazine</p>
+            <p>Date Published: March 20, 2024</p>
+        </div>
+        
+            <div class="imagecontainer">
+                <img src="images/Got a friend to keep me company.png" alt="">
+            </div>
+
+            <div class="petarticle">
+                <h3>Pet Wellness Articles</h3>
+
+                <h4>How to keep your pet active during winter</h4>
+                <a href="#">Learn tips and tricks to ensure your pets stays active and healthy during the cold season</a>
+
+                <h4>Understanding Pet Anxiety And Ways To Manage It.</h4>
+                <a href="#">Explore the signs of pet anxiety and discover effective strategies to help your pet cope</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const closeHamburger = document.getElementById("close-hamburger")
+    const nav = document.getElementById("nav-menu");
+    const header = document.getElementById("header")
+    hamburger.addEventListener("click", () => {
+       nav.style.display = "block";
+       hamburger.style.display = "none";
+       closeHamburger.style.display = "block"
+    });
+    
+    closeHamburger.addEventListener('click', () => {
+      hamburger.style.display = 'block';
+      closeHamburger.style.display = 'none'
+      nav.style.display = "none"
+    })
+    
+    </script> 
+</html>
